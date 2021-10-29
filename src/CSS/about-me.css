@@ -1,0 +1,74 @@
+
+#about-me-container {
+    color: #ADD8E6;
+
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+
+    margin-top: 25vh;
+}
+
+.knowledge-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+#about-me-container div {
+    text-align: center;
+    width: 33%;
+    color: #63d4fa;
+    font-size: 38px;
+}
+
+#about-me-container div img {
+    height: 30%;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 1080px) {
+    #about-me-container div img {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    #about-me-container div img {
+        height: 20%;
+        
+    }
+
+    #about-me-container div h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .about-me-content {
+        height: auto !important;
+    }
+    
+    #about-me-container {
+        display: block !important; 
+        height: auto;
+    }
+
+    #about-me-container div {
+        text-align: center !important;
+        background-color: #fcf489;
+        color: #4fcffa;
+        padding-top: 10%;
+        width: 100vw !important;
+        height: 50vh !important;
+    }
+
+    #about-me-container img {
+        height: 60% !important;
+        margin-bottom: 0 !important;
+    }
+
+    #about-me-container h1 {
+        margin-top: 0;
+    }
+}

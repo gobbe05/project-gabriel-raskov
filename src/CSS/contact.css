@@ -1,0 +1,15 @@
+.contact-form {
+    margin-top: 15vh;
+    width: 60vw;
+    height: 85vh;
+    margin-left: 20vw;
+}
+
+.contact-form form #message-input {
+    min-height: 20vh;
+    width: 100%;
+}
+
+.contact-form form legend{
+    color: #ADD8E6;
+}

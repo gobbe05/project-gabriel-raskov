@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
+
+#root {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.content-container {
+    display: flex;
+    height: 87.5vh;
+    font-size: 36px;
+    font-family: 'Gemunu Libre', sans-serif;
+    color: #ADD8E6;
+
+    overflow: hidden;
+}
+
+.content-container p {
+    color: #ADD8E6;
+    transition: color 5s;
+}
+
+.content-container p:hover {
+    color: #EEEEEE;
+}
+
+.content-container h1 {
+    transition: left 1s;
+}
+
+.content-container h3 {
+    color: #141c3a;
+
+    transition: left 2s;
+}
+
+.content-container div {
+    
+    transition: left 2s;
+}
+
+.move-content-container .name-h1 {
+    left: 250%;
+}
+
+.move-content-container .name-h3 {
+    left: 250%;
+}
+
+.move-content-container .arrow-right {
+    left: 195%;
+}
+
+.move-content-container .personal-story p {
+    left: 0;
+}
+
+.move-content-container .story-1{
+    transition: left 2s;
+}
+.move-content-container .story-2{
+    transition: left 1.5s;
+}
+.move-content-container .story-3{
+    transition: left 1s;
+}
+
+.move-content-container .arrow-left {
+    left: 5%;
+}
+
+.personal-story {
+    text-align: center;
+}
+
+.story-text {
+    position: relative;
+
+    display: flex;
+
+    margin-left: 15%;
+    margin-right: 15%;
+
+    top: 10%;
+}
+
+.personal-story p {
+    position: relative;
+
+    font-size: 24px;
+    width: 33%;
+
+    left: -200%;
+    margin-top: 15%;
+    transition: right 0.5s;
+    transition: left 1s;
+
+}
+
+.personal-story:hover {
+    color: #EEEEEE;
+
+}
+
+.personal-information {
+    position: absolute;
+    overflow: hidden;
+
+    z-index: 0;
+
+    left: 0;
+
+    top: 35%;
+    width: 100vw;
+}
+
+.personal-information div{
+    text-align: center;
+
+    width: 100%;
+}
+
+
+.personal-information h1 {
+
+    left: 0;
+
+    text-align: center;
+
+    position: relative;
+
+    color: #ADD8E6;
+
+    animation: pulse 2.5s;
+
+    transition: 2s;
+}
+
+.personal-information h1:hover {
+    color: #EEEEEE;
+}
+
+.personal-information h3 {
+    color: #ADD8E6;
+
+    left: 0;
+    
+    text-align: center;
+
+    position: relative;
+
+    animation: pulse 4s;
+    
+    transition: 1.5s;
+}
+
+.personal-information h3:hover {
+    color: #EEEEEE;
+}
+
+.arrow {
+    font-size: 64px;
+    z-index: 100;
+    top: 40%;
+}
+
+.arrow-right {
+    position: relative;
+    right: 5%;
+    left: -5%;
+
+    z-index: 10;
+
+    transition: left 0.5s;
+}
+
+.arrow-left a {
+    color: #ADD8E6;
+    text-decoration: none;
+}
+
+.arrow-left {
+    position: relative;
+    left: -15%;
+    z-index: 100;
+    transition: left 0.5s;
+}
+
+.arrow a{
+    color: #ADD8E6;
+    text-decoration: none;
+    z-index: 100;
+    transition: color 0.5s;    
+}
+
+.arrow a:hover {
+    color: #EEEEEE;
+    opacity: 0.9;
+    
+}
+
+.arrow-down {
+    font-size: 72px;
+    font-weight: 500;
+
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+
+    top: 85%;
+
+    animation: moveArrow 4s;
+}
+
+@keyframes moveArrow {
+    0% {
+        top: 85%;
+    }
+    15% {
+        top: 82%;
+    }
+    15% {
+        top: 82%;
+    }
+    30% {
+        top: 85%;
+    }
+    30% {
+        top: 85%;
+    }
+    45% {
+        top: 82%;
+    }
+    45% {
+        top: 82%;
+    }
+    60% {
+        top: 85%;
+    }
+    60% {
+        top: 85%;
+    }
+    75% {
+        top: 82%;
+    }
+    75% {
+        top: 82%;
+    }
+    1000% {
+        top: 85%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        color: #ADD8E6;
+    }
+
+    50% {
+        transform: scale(1.2);
+        color: white;
+    }
+
+    55% {
+        transform: scale(1);
+    }
+
+
+
+    100% {
+        color: #ADD8E6
+    }
+}
+
+
+@media screen and (max-width: 415px) {
+    .name h1 {
+        font-size: 48px;
+    }
+
+    .date h3 {
+        font-size: 28px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .arrow-down {
+        display: block;
+    }
+
+    .personal-story p {
+        margin-top: 0 !important;
+    }
+
+    .story-text {
+        flex-direction: column;
+        top: 0 !important;
+    }
+    .story-text p {
+      width: 100%;
+    }
+}
+

@@ -1,0 +1,60 @@
+.opacity-fix {
+    position: fixed;
+    background: black;
+    left: 0;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+}
+.add-todo-container {
+    color: #ADD8E6;
+
+    border-radius: 25px;
+
+    position: fixed;
+
+    z-index: 10000;
+
+    background: #1A1A1D;
+
+    width: 50vw;
+    height: 50vh;
+
+    top: 25vh;
+    left: 25vw;
+    right: 25vw;
+}
+
+.add-todo-container input{
+    position: relative;
+
+    top: 35%;
+    
+    height: 10%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.add-todo-container button {
+    position: relative;
+
+    top: 35%;
+    
+    height: 10%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.add-todo-container h2 {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    font-size: 42px;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.add-todo-container h2:hover {
+    color: #EEEEEE;
+}
+
